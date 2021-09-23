@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Telegram-CN</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e1e1e;
+  background-size: cover;
+  height: 100vh;
+
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+nav {
+  height: 40px;
+  margin: 40px auto;
+  background-color: rgba(23, 23, 50, 0.7);
+  text-align: center;
+  border-radius: 4px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.main > li {
+  margin: 0 2%;
+}
+.main > li a{
+  border-left:1px solid rgba(23, 23, 50, 1);
+}
+a {
+  text-decoration: none;
+  color: #ffe;
+  text-transform: capitalize;
+  font-family: monospace;
+  display: block;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: background-color 0.5s ease-in-out;
+
+  font-family: "Raleway", sans-serif;
+}
+
+a:hover {
+  background-color: #631818;
+}
+
+.drop li {
+  opacity: 0;
+  transform-origin: top center;
+}
+
+.drop li a {
+  background-color: rgba(23, 23, 50, 0.7);
+  padding: 10px 0;
+}
+
+/*------------- menu1 animation -------------------*/
+
+.main li:hover .menu1 li:first-of-type {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu1 li:nth-of-type(2) {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu1 li:nth-of-type(3) {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu1 li:last-of-type {
+  animation: menu1 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu1 {
+  from {
+    opacity: 0;
+    transform: translateX(30px) rotateY(90deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) rotateY(0);
+  }
+}
+
+/*------------- menu2 animation -------------------*/
+
+.main li:hover .menu2 li:first-of-type {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu2 li:nth-of-type(2) {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu2 li:nth-of-type(3) {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu2 li:last-of-type {
+  animation: menu2 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu2 {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/*------------- menu3 animation -------------------*/
+
+.main li:hover .menu3 li:first-of-type {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu3 li:nth-of-type(2) {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu3 li:nth-of-type(3) {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu3 li:last-of-type {
+  animation: menu3 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu3 {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/*------------- menu4 animation -------------------*/
+
+.main li:hover .menu4 li:first-of-type {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu4 li:nth-of-type(2) {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu4 li:nth-of-type(3) {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu4 li:last-of-type {
+  animation: menu4 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu4 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+/*------------- menu5 animation -------------------*/
+
+.main li:hover .menu5 li:first-of-type {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.3s;
+}
+
+.main li:hover .menu5 li:nth-of-type(2) {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu5 li:nth-of-type(3) {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 0.9s;
+}
+
+.main li:hover .menu5 li:last-of-type {
+  animation: menu5 0.3s ease-in-out forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes menu5 {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0);
+  }
+}
+
+/*------------- menu6 animation -------------------*/
+
+.main li:hover .menu6 li:first-of-type {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+.main li:hover .menu6 li:nth-of-type(2) {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.4s;
+}
+
+.main li:hover .menu6 li:nth-of-type(3) {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.6s;
+}
+
+.main li:hover .menu6 li:last-of-type {
+  animation: menu6 0.3s ease-in-out forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes menu6 {
+  0% {
+    opacity: 0;
+    transform: scale(2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* my button style */
+.white-mode {
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: sans-serif;
+}
+
+.white-mode:hover {
+  background-color: #fff;
+  color: #122;
+}
+</style>
+</head>
+<body>
+
+<h1>Telegram-APP-插件-组群整合站</h1>
+
+<nav>
+  <ul class="main">
+    <li>
+      <a href="#">安装包程序</a>
+      <ul class="drop menu1">
+        <li><a href="https://telegrcn.org/download/telegramCN_651.apk">TG官方安卓版</a></li>
+        <li><a href="https://telegrcn.org/download/tsetup.2.7.1.exe">TG官方win版</a></li>
+        <li><a href="https://apps.apple.com/app/telegram-messenger/id686449807">TG官方iOS版</a></li>
+        <li><a href="https://telegrcn.org/download/tsetup.2.1.10.dmg">TG官方Mac版</a></li>
+      </ul>
+    </li>
+    <li><a href="#">精品TG组群</a>
+      <ul class="drop menu2">
+        <li><a href="https://t.me/joinchat/Gl5k6w4etLs4YTNl">TG资源总部</a></li>
+        <li><a href="https://t.me/joinchat/Gl5k6w4etLs4YTNl">每日更新</a></li>
+        <li><a href="https://t.me/joinchat/Gl5k6w4etLs4YTNl">二次元资源分享</a></li>
+        <li><a href="https://t.me/joinchat/Gl5k6w4etLs4YTNl">欢迎你的加入</a></li>
+      </ul>
+    </li>
+    <li><a href="#">插件</a>
+      <ul class="drop menu3">
+        <li><a href="https://t.me/setlanguage/classic-zh-cn">官方汉化TG插件</a></li>
+        <li><a href="https://t.me/KALI_debian">此位招租</a></li>
+        <li><a href="#">此位招租</a></li>
+        <li><a href="#">此位招租</a></li>
+      </ul>
+    </li>
+    <li><a href="#">免费VPN</a>
+      <ul class="drop menu4">
+        <li><a href="#"></a></li>
+        <li><a href="https://www.z06fh74.com/i/G4TJZV">雷霆加速器</a></li>
+        <li><a href="https://vncool.live?userid=WEJEVR&v=21">翻墙VPN</a></li>
+        <li><a href="https://t.me/KALI_debian">节点代搭</a></li>
+      </ul>
+    </li>
+    <li><a href="#">NB工具区</a>
+      <ul class="drop menu5">
+        <li><a href="https://via.0g0.xyz/lens/">碧罗现身器</a></li>
+        <li><a href="https://via.0g0.xyz/letter">邮箱测压</a></li>
+        <li><a href="https://via.0g0.xyz/qb">查Q绑</a></li>
+        <li><a href="https://via.0g0.xyz/bomb">短信测压</a></li>
+      </ul>
+    </li>
+    <li><a href="#">精品TG频道</a>
+      <ul class="drop menu6">
+        <li><a href="https://t.me/theYNCChannel">资源总部</a></li>
+        <li><a href="https://t.me/theYNCChannel">每日更新频道</a></li>
+        <li><a href="https://t.me/KALI_debian">10元广告位</a></li>
+        <li><a href="https://t.me/KALI_debian">联系我的TG</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+<div style="text-align:center;">
+<p><a target="_blank"><a target="_blank"><a target="_blank"></a><a target="_blank"><a target="_blank"><a target="_green">Telegram（非正式简称TG）是跨平台的即时通信软件，其客户端是自由及开放源代码软件，但服务器端是专有软件。用户可以相互交换加密与自毁消息（类似于“阅后即焚”），发送照片、影片等所有类型文件，提供绝对安全的端对端加密聊天</a><a target="_blank">欢迎下载使用全世界最安全最NB的社交APP-网页反馈Q群513164956</a><a target="_blank">注意❗使用包括登陆TG全过程必须连接VPN代理(软件是你自己安装的，阴阳人不喜欢给我直接卸载)</a><a target="_blank">如果您是付费找到此网页的，那我只能说您被圈钱了(Lost1.41包含以往版本都是我免费移植给你们的，可笑吧,帮你们移植安卓的人没和你们要一分钱反倒说我是广告？这就是现实😢)</a><a target="_blank"><img src="xhl.png"></p>
+</div>
+</body>
+</html>
