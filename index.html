@@ -1,153 +1,416 @@
-<!doctype html>
-<html>
-<head><meta http-equiv="refresh">
-<meta charset="utf-8">
-<title>站点搭建中……</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  	<title>Lost hope - GitHub source:)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Responsive Html5 Templates">
+    <meta name="author" content="">
 
-<style>
-
-* {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    box-sizing: border-box;
-    color: inherit;
-}
-
-body {
-    background-image: linear-gradient(120deg, #4f0088 0%, #000000 100%);
-    height: 100vh;
-}
-
-h1 {
-    font-size: 45vw;
-    text-align: center;
-    position: fixed;
-    width: 100vw;
-    z-index: 1;
-    color: #ffffff26;
-    text-shadow: 0 0 50px rgba(0, 0, 0, 0.07);
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    font-family: "Montserrat", monospace;
-}
-
-div {
-    background: rgba(0, 0, 0, 0);
-    width: 70vw;
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    margin: 0 auto;
-    padding: 30px 30px 10px;
-    box-shadow: 0 0 150px -20px rgba(0, 0, 0, 0.5);
-    z-index: 3;
-}
-
-P {
-    font-family: "Share Tech Mono", monospace;
-    color: #f5f5f5;
-    margin: 0 0 20px;
-    font-size: 17px;
-    line-height: 1.2;
-}
-
-span {
-    color: #f0c674;
-}
-
-i {
-    color: #8abeb7;
-}
-
-div a {
-    text-decoration: none;
-}
-
-b {
-    color: #81a2be;
-}
-
-a.avatar {
-    position: fixed;
-    bottom: 15px;
-    right: -100px;
-    -webkit-animation: slide 0.5s 4.5s forwards;
-            animation: slide 0.5s 4.5s forwards;
-    display: block;
-    z-index: 4
-}
-
-a.avatar img {
-    border-radius: 100%;
-    width: 44px;
-    border: 2px solid white;
-}
-
-@-webkit-keyframes slide {
-    from {
-        right: -100px;
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-        opacity: 0;
-    }
-    to {
-        right: 15px;
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-        opacity: 1;
-    }
-}
-
-@keyframes slide {
-    from {
-        right: -100px;
-        -webkit-transform: rotate(360deg);
-                transform: rotate(360deg);
-        opacity: 0;
-    }
-    to {
-        right: 15px;
-        -webkit-transform: rotate(0deg);
-                transform: rotate(0deg);
-        opacity: 1;
-    }
-}
-</style>
+	<!-- styles -->
+	
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/menu.min.css">
+	
+	
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="js/html5shiv.js"></script>
+        <script src="js/respond.min.js"></script>
+    <![endif]-->
 </head>
-<body>
-<h1></h1>
-<div>
-<p>> <span>[root@VM-0-9-centos ~]#</span>: "<i>请稍等站点目前正在搭建...</i>"</p>
-<p>> <span>[root@VM-0-9-centos ~]#</span>: "<i>站点将免费提供所有lost life的更新...</i>"</p>
-<p>> <span>[root@VM-0-9-centos ~]#</span>: "<i>免费提供Lost life的安卓和PC版...</i>"</p>
-<p>> <span>[root@VM-0-9-centos ~]#</span>: "<i>网页搭建只有我一个人...</i>"</p>
-<p>> <span>[root@VM-0-9-centos ~]#</span>: "<i>我深深的爱着我的国家...</i>"</p>
-<p>> <span>[root@VM-0-9-centos ~]#</span>: "<i>永远跟党走...</i>"</p>
 
-</div>
+<body id="wrapper">
 
-<script>
-var str = document.getElementsByTagName('div')[0].innerHTML.toString();
-var i = 0;
-document.getElementsByTagName('div')[0].innerHTML = "";
+	<!-- /////////////////////////////////////////Navigation -->
+	<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+	<nav id="mm-menu" class="mm-menu">
+		<div class="mm-menu__header">
+			<h2 class="mm-menu__title">More content</h2>
+		</div>
+		<ul class="mm-menu__items">
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="https://via.0g0.xyz/lens">
+				<span class="mm-menu__link-text"><i class="fa fa-user"></i> 碧萝现身器</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="https://via.0g0.xyz/qb">
+				<span class="mm-menu__link-text"><i class="fa fa-user"></i> 查Q绑</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="https://via.0g0.xyz/letter">
+				<span class="mm-menu__link-text"><i class="fa fa-inbox"></i> 邮箱测压</span>
+			  </a>
+			</li>
+			<li class="mm-menu__item">
+			  <a class="mm-menu__link" href="https://via.0g0.xyz/bomb">
+				<span class="mm-menu__link-text"><i class="fa fa-heart"></i> 短信测压</span>
+			  </a>
+			</li>
+		</ul>
+	</nav><!-- /nav -->
+	
+	<!-- /////////////////////////////////////////Header -->
+	<div class="top-header">
+		<div class="container">
+		<ul class="list-inline top-social">
+			<li><a href="https://via.0g0.xyz/Chat-group"><p>更多游戏</p></i></a></li>
+				<li><a href="https://via.0g0.xyz/Chat-group"><p>交流群</p></i></a></li>
+				<li><a href="https://my-lostlife.github.io/TG/"><p>TG导航</p></i></a></li>
+				<li><a href="https://t.me/KALI_debian"><p>联系我</p></i></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="svg-container nav-svg svg-block">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+		  <g transform="translate(0,-902.36218)"></g>
+		  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+		  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+		  <path d="M 0,150 0,0 1925,0"></path>
+		</svg>
+	</div>
+	<header id="masthead" class="site-header" role="banner" style="background-position: 50% -50px;">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="site-branding">
+				<a href="index.html" title="KOMPLEET"><img class="site-logo" src="images/logo.png" alt="KOMPLEET"></a>
+			</div><!-- .site-branding -->
+		</div>
+		<div class="svg-container header-svg svg-block">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+				<g transform="translate(0,-902.36218)"></g>
+				  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+				  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+				  <path d="m 1925,0 0,150 -1925,0"></path>
+			</svg>
+		</div>		
+	</header><!-- #masthead -->
+	<!-- Header -->
+	
+	
+	<!-- /////////////////////////////////////////Content -->
+	<div id="page-content" class="index-page">
+		
+		<!-- ////////////Content Box 01 -->
+		<section class="box-content box-5 box-style-3" id="nav-blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="box-item">
+							<div class="svg-container post-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+								  <g transform="translate(0,-902.36218)"></g>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="M 0,150 0,0 1925,0"></path>
+								</svg>
+							</div>
+							<div class="entry-thumb">
+								<img class="img-responsive" src="Lost-life/img/home.jpg">			
+								<a class="thumb-link" href="Lostlife.html"><i class="fa fa-link"></i></a>		
+							</div>
+							<div class="content">
+								<h3 class="entry-title">
+									<a href="Lostlife.html">Lost life-迷失的生命</a>
+								</h3>
+								<p>免费提供Lost life最新安卓-PC电脑破解版，游戏下载与内容介绍请进入详情页，Lost life目前已更新至：</font><font color="#8968CD"><b>1.41</b></font></p>
+								<span></font><font color="#ff000000"><b>R18 </b></font> update date：2021 9-14</span><br>
+							</div>
+							<div class="read-more">
+								<a href="Lostlife.html">了解详情 …</a>
+							</div>
+							<div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>	
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-item">
+							<div class="svg-container post-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+								  <g transform="translate(0,-902.36218)"></g>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="M 0,150 0,0 1925,0"></path>
+								</svg>
+							</div>
+							<div class="entry-thumb">
+								<img class="img-responsive" src="Dog-X/img/home.jpg">			
+								<a class="thumb-link" href="Dog-X.html"><i class="fa fa-link"></i></a>		
+							</div>
+							<div class="content">
+								<h3 class="entry-title">
+									<a href="Dog-X.html">恶魔の石板和被诅咒的犬公主</a>
+								</h3>
+								<p>免费提供犬公主最新安卓-PC电脑破解版，游戏下载与内容介绍请进入详情页，犬公主目前已更新至：</font><font color="#8968CD"><b>1.04</b></font></p>
+								<span></font><font color="#ff000000"><b>R18 </b></font> update date：2021 5-14</span><br>
+								<a class="btn btn-1" href="Dog-X.html">Read More</a>
+							</div>
+							<div class="read-more">
+								<a href="Dog-X.html">了解详情 …</a>
+							</div>
+							<div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-md-4">
+						<div class="box-item">
+							<div class="svg-container post-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+								  <g transform="translate(0,-902.36218)"></g>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="M 0,150 0,0 1925,0"></path>
+								</svg>
+							</div>
+<div class="entry-thumb">
+								<img class="img-responsive" src="H-dream/img/home.jpg">			
+								<a class="thumb-link" href="H-dream.html"><i class="fa fa-link"></i></a>		
+							</div>
+							<div class="content">
+								<h3 class="entry-title">
+								<a href="H-dream.html">良い梦</a>
+								</h3>
+								<p>免费提供良い梦最新安卓版，游戏下载与内容介绍请进入详情页，良い梦目前已更新至：</font><font color="#8968CD"><b>1.1</b></font></p>
+								<span></font><font color="#ff000000"><b>R18 </b></font> update date：2021 2-22</span><br>
+								<a class="btn btn-1" href="H-dream.html">Read More</a>
+							</div>
+							<div class="read-more">
+								<a href="H-dream.html">了解详情 …</a>
+								</div>
+                                 
+                                 <div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4">
+						<div class="box-item">
+							<div class="svg-container post-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+								  <g transform="translate(0,-902.36218)"></g>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="M 0,150 0,0 1925,0"></path>
+								</svg>
+							</div>
+							<div class="entry-thumb">
+								<img class="img-responsive" src="modify/home.png">			
+								<a class="thumb-link" href="modify.html"><i class="fa fa-link"></i></a>		
+							</div>
+							<div class="content">
+								<h3 class="entry-title">
+									<a href="modify.html">定制你的Lost life</a>
+								</h3>
+								<p>你是否已经玩腻了原版Lost life，来我这里修改游戏贴图定制你专属的Lost life吧</p>
+								<span></font><font color="#ff000000"><b>R18 </b></font>只要是SWF文件游戏都可以定制</span><br>
+								<a class="btn btn-1" href="modify.html">Read More</a>
+							</div>
+							<div class="read-more">
+								<a href="modify.html">了解详情 …</a>
+							</div>
+							<div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-item">
+							<div class="svg-container post-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+								  <g transform="translate(0,-902.36218)"></g>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="M 0,150 0,0 1925,0"></path>
+								</svg>
+							</div>
+							<div class="entry-thumb">
+								<img class="img-responsive" src="images/4.jpg">			
+								<a class="thumb-link" href="single.html"><i class="fa fa-link"></i></a>		
+							</div>
+							<div class="content">
+								<h3 class="entry-title">
+									<a href="single.html">更新中……</a>
+								</h3>
+								<p>全站仅我一人搭建运营，如果想游玩更多游戏欢迎联系赞助我，我会不断更新其他游戏的</p>
+								<span></font><font color="#ff000000"><b>R18 </b></font></span> 本人从未售卖过Lost哦😅<br>
+								<a class="btn btn-1" href="single.html">Read More</a>
+							</div>
+							<div class="read-more">
+								<a href="single.html">了解详情 …</a>
+							</div>
+							<div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="box-item">
+							<div class="svg-container post-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+								  <g transform="translate(0,-902.36218)"></g>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+								  <path d="M 0,150 0,0 1925,0"></path>
+								</svg>
+							</div>
+							<div class="entry-thumb">
+								<img class="img-responsive" src="images/6.jpg">			
+								<a class="thumb-link" href="single.html"><i class="fa fa-link"></i></a>		
+							</div>
+							<div class="content">
+								<h3 class="entry-title">
+									<a href="single.html">更新中……</a>
+								</h3>
+								<p>全站仅我一人搭建运营，如果想游玩更多游戏欢迎联系赞助我，我会不断更新其他游戏的</p>
+								<span></font><font color="#ff000000"><b>R18 </b></font> 本人从未售卖过Lost哦😅</span><br>
+								<a class="btn btn-1" href="single.html">Read More</a>
+							</div>
+							<div class="read-more">
+								<a href="single.html">了解详情 …</a>
+							</div>
+							<div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</div>
 
-setTimeout(function() {
-    var se = setInterval(function() {
-        i++;
-        document.getElementsByTagName('div')[0].innerHTML = str.slice(0, i) + "|";
-        if (i == str.length) {
-            clearInterval(se);
-            document.getElementsByTagName('div')[0].innerHTML = str;
-        }
-    }, 1);
-},0);
-</script>
 
+
+
+
+
+
+							<div class="svg-container post-bottom-svg svg-block">
+								<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+									<g transform="translate(0,-902.36218)"></g>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+									  <path d="m 1925,0 0,150 -1925,0"></path>
+								</svg>
+							</div>
+						</div>
+					</div>
+		<div class="comment-respond container">
+			<h3 id="reply-title" class="comment-reply-title">This is mirage</h3>
+			<p class="comment-notes"><span id="email-notes">搬运与移植H油等一年经验.</span> 善于网站搭建 APK逆向等，在学HTML API与kaliLinux:)
+			<span class="required">努力成为全栈程序员 不为别的，做自己喜欢做的🙁</span></p>
+			</div>
+	<!-- /////////////////////////////////////////Footer -->
+	<footer>
+		<div class="wrap-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						</div>
+					<div class="col-md-4">
+						<ul class="list-inline social-buttons">
+							<li><a href="https://t.me/KALI_debian"><p>联系我</p></a>
+							</li>
+							<li><a href="https://t.me/theYNCChannel"><p>我的频道</p></a>
+							</li>
+							<li><a href="https://via.0g0.xyz/Chat-group"><p>交流群</p></a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-md-4">
+						<ul class="list-inline quicklinks">
+							<li><a href="https://0g0.xyz">About me</a>
+							</li>
+							<li><a href="https://sad-lost-life.github.io">GitHub</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- Footer -->
+	
+	<!-- Top Slider -->
+    <script src="js/jquery.js"></script>
+   
+	<!-- Menu Js -->
+	<script src="js/materialMenu.js"></script>
+	<script>
+	  var menu = new Menu;
+	</script>
+	
+
+  <script src="https://cdn.bootcss.com/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      function getNowFormatDate() {
+        var date = new Date();
+        var month = date.getMonth() + 1;
+        var strDate = date.getDate();
+        var currentdate = month + "月" + strDate + "日";
+        return currentdate;
+      }
+      var text = [
+        "欢迎你！本站所有游戏均免费",
+        "如果你是倒卖游戏的，请查看-Lostlife定制，我给你定制专属",
+        "如果你是👮‍♂️，我告诉你我没盈利一毛钱",
+        "如果你黑客，希望你知道什么是GitHub",
+        "如果你是LSP，欢迎下载本站的游戏",
+        "等我有💰了会经常更新其他游戏的:)",
+      ], content = "";
+      for (var i = 0; i < text.length; i++) {
+        content += (i + 1) + ". " + text[i] + "\n";
+      }
+      setTimeout(function () {
+        swal(getNowFormatDate() + "通知", content, "success");
+      }, 1000)
+    });
+
+  </script>
+	
+	<!-- Bootstrap Core JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
