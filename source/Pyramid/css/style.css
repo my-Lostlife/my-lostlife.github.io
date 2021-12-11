@@ -59,7 +59,7 @@ hr.line { margin: 15px auto; padding: 0; max-width: 90px;border: 0; border-top: 
 
 header{}
 
-.site-header {position: relative;margin-bottom: 45px;z-index:2;background: url(../images/bxm.png) no-repeat;background-position: 0 0;background-attachment: fixed;background-size: cover;}
+.site-header {position: relative;margin-bottom: 45px;z-index:2;background: url(../images/header.jpg) no-repeat;background-position: 0 0;background-attachment: fixed;background-size: cover;}
 .site-branding {padding-top: 60px;text-align: center;}
 .site-logo{}
 .overlay {position: absolute;height: 100%;width: 100%;top: 0;background-color: #000;opacity: 0.4;z-index: -1;}
