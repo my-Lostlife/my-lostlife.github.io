@@ -1,0 +1,362 @@
+[{
+  "predicate": "document",
+  "params": [
+    {"name": "thumbs", "type": "Array<PhotoSize.photoSize | PhotoSize.photoCachedSize | PhotoSize.photoStrippedSize | PhotoSize.photoPathSize>"},
+    {"name": "type", "type": "'gif' | 'sticker' | 'audio' | 'voice' | 'video' | 'round' | 'photo' | 'pdf'"},
+    {"name": "h", "type": "number"},
+    {"name": "w", "type": "number"},
+    {"name": "file_name", "type": "string"},
+    {"name": "fileName", "type": "string"},
+    {"name": "file", "type": "File"},
+    {"name": "duration", "type": "number"},
+    {"name": "audioTitle", "type": "string"},
+    {"name": "audioPerformer", "type": "string"},
+    {"name": "sticker", "type": "1 | 2 | 3"},
+    {"name": "stickerEmoji", "type": "string"},
+    {"name": "stickerEmojiRaw", "type": "string"},
+    {"name": "stickerSetInput", "type": "InputStickerSet.inputStickerSetID"},
+    {"name": "stickerThumbConverted", "type": "true"},
+    {"name": "stickerCachedThumbs", "type": "{[toneIndex: number]: {url: string, w: number, h: number}}"},
+    {"name": "animated", "type": "boolean"},
+    {"name": "supportsStreaming", "type": "boolean"}
+  ]
+}, {
+  "predicate": "photoSizeProgressive",
+  "params": [
+    {"name": "size", "type": "number"}
+  ]
+}, {
+  "predicate": "dialog",
+  "params": [
+    {"name": "index", "type": "number"},
+    {"name": "index_0", "type": "number"},
+    {"name": "index_1", "type": "number"},
+    {"name": "index_2", "type": "number"},
+    {"name": "index_3", "type": "number"},
+    {"name": "index_4", "type": "number"},
+    {"name": "index_5", "type": "number"},
+    {"name": "index_6", "type": "number"},
+    {"name": "index_7", "type": "number"},
+    {"name": "index_8", "type": "number"},
+    {"name": "index_9", "type": "number"},
+    {"name": "index_10", "type": "number"},
+    {"name": "peerId", "type": "PeerId"},
+    {"name": "topMessage", "type": "any"},
+    {"name": "migratedTo", "type": "PeerId"}
+  ]
+}, {
+  "predicate": "dialogFolder",
+  "params": [
+    {"name": "index", "type": "number"},
+    {"name": "peerId", "type": "PeerId"},
+    {"name": "folder_id", "type": "number"}
+  ]
+}, {
+  "predicate": "dialogFilter",
+  "params": [
+    {"name": "orderIndex", "type": "0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10"},
+    {"name": "peerId", "type": "PeerId"},
+    {"name": "folder_id", "type": "number"}
+  ]
+}, {
+  "predicate": "message",
+  "params": [
+    {"name": "mid", "type": "number"},
+    {"name": "deleted", "type": "boolean"},
+    {"name": "peerId", "type": "PeerId"},
+    {"name": "fromId", "type": "PeerId"},
+    {"name": "fwdFromId", "type": "PeerId"},
+    {"name": "grouped_id", "type": "string"},
+    {"name": "random_id", "type": "string"},
+    {"name": "unread", "type": "true"},
+    {"name": "is_outgoing", "type": "true"},
+    {"name": "is_scheduled", "type": "true"},
+    {"name": "rReply", "type": "string"},
+    {"name": "viaBotId", "type": "PeerId"},
+    {"name": "clear_history", "type": "boolean"},
+    {"name": "pending", "type": "boolean"},
+    {"name": "error", "type": "any"},
+    {"name": "send", "type": "() => Promise<any>"},
+    {"name": "totalEntities", "type": "MessageEntity[]"},
+    {"name": "reply_to_mid", "type": "number"},
+    {"name": "savedFrom", "type": "string"},
+    {"name": "sponsored", "type": "true"},
+    {"name": "local", "type": "true"},
+    {"name": "sponsoredMessage", "type": "SponsoredMessage.sponsoredMessage"},
+    {"name": "promise", "type": "CancellablePromise<void>"}
+  ]
+}, {
+  "predicate": "messageService",
+  "params": [
+    {"name": "mid", "type": "number"},
+    {"name": "deleted", "type": "boolean"},
+    {"name": "peerId", "type": "PeerId"},
+    {"name": "fromId", "type": "PeerId"},
+    {"name": "unread", "type": "true"},
+    {"name": "is_outgoing", "type": "true"},
+    {"name": "rReply", "type": "string"},
+    {"name": "viaBotId", "type": "PeerId"},
+    {"name": "is_single", "type": "true"},
+    {"name": "pending", "type": "boolean"},
+    {"name": "error", "type": "any"},
+    {"name": "send", "type": "() => Promise<any>"},
+    {"name": "random_id", "type": "string"},
+    {"name": "reply_to_mid", "type": "number"},
+    {"name": "clear_history", "type": "boolean"},
+    {"name": "local", "type": "true"}
+  ]
+}, {
+  "predicate": "messageEmpty",
+  "params": [
+    {"name": "deleted", "type": "boolean"},
+    {"name": "mid", "type": "number"},
+    {"name": "pFlags", "type": "{}"}
+  ]
+}, {
+  "predicate": "messageEntityEmoji",
+  "params": [
+    {"name": "offset", "type": "number"},
+    {"name": "length", "type": "number"},
+    {"name": "unicode", "type": "string"}
+  ],
+  "type": "MessageEntity"
+}, {
+  "predicate": "messageEntityHighlight",
+  "params": [
+    {"name": "offset", "type": "number"},
+    {"name": "length", "type": "number"}
+  ],
+  "type": "MessageEntity"
+}, {
+  "predicate": "messageEntityLinebreak",
+  "params": [
+    {"name": "offset", "type": "number"},
+    {"name": "length", "type": "number"}
+  ],
+  "type": "MessageEntity"
+}, {
+  "predicate": "messageEntityCaret",
+  "params": [
+    {"name": "offset", "type": "number"},
+    {"name": "length", "type": "number"}
+  ],
+  "type": "MessageEntity"
+}, {
+  "predicate": "messageEntityBotCommand",
+  "params": [
+    {"name": "unsafe", "type": "boolean"}
+  ]
+}, {
+  "predicate": "user",
+  "params": [
+    {"name": "initials", "type": "string"},
+    {"name": "sortName", "type": "string"}
+  ]
+}, {
+  "predicate": "auth.sentCode",
+  "params": [
+    {"name": "phone_number", "type": "string"}
+  ]
+}, {
+  "predicate": "draftMessage",
+  "params": [
+    {"name": "rReply", "type": "string"},
+    {"name": "rMessage", "type": "string"}
+  ]
+}, {
+  "predicate": "chat",
+  "params": [
+    {"name": "initials", "type": "string"}
+  ]
+}, {
+  "predicate": "chatForbidden",
+  "params": [
+    {"name": "initials", "type": "string"}
+  ]
+}, {
+  "predicate": "channel",
+  "params": [
+    {"name": "initials", "type": "string"}
+  ]
+}, {
+  "predicate": "channelForbidden",
+  "params": [
+    {"name": "initials", "type": "string"}
+  ]
+}, {
+  "predicate": "messageActionDiscussionStarted",
+  "params": [],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatLeave",
+  "params": [
+    {"name": "user_id", "type": "UserId"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChannelDeletePhoto",
+  "params": [],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChannelEditTitle",
+  "params": [
+    {"name": "title", "type": "string"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChannelEditPhoto",
+  "params": [
+    {"name": "photo", "type": "Photo"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChannelEditVideo",
+  "params": [
+    {"name": "photo", "type": "Photo"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatEditVideo",
+  "params": [
+    {"name": "photo", "type": "Photo"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatAddUsers",
+  "params": [
+    {"name": "users", "type": "Array<UserId>"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatJoined",
+  "params": [
+    {"name": "users", "type": "Array<UserId>"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatReturn",
+  "params": [
+    {"name": "users", "type": "Array<UserId>"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatJoinedYou",
+  "params": [
+    {"name": "users", "type": "Array<UserId>"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "messageActionChatReturnYou",
+  "params": [
+    {"name": "users", "type": "Array<UserId>"}
+  ],
+  "type": "MessageAction"
+}, {
+  "predicate": "langPackDifference",
+  "params": [
+    {"name": "local", "type": "boolean"},
+    {"name": "appVersion", "type": "string"},
+    {"name": "countries", "type": "HelpCountriesList.helpCountriesList"}
+  ]
+}, {
+  "predicate": "updateNewDiscussionMessage",
+  "params": [
+    {"name": "message", "type": "Message"}
+  ],
+  "type": "Update"
+}, {
+  "predicate": "updateDeleteDiscussionMessages",
+  "params": [
+    {"name": "messages", "type": "number[]"},
+    {"name": "channel_id", "type": "ChatId"}
+  ],
+  "type": "Update"
+}, {
+  "predicate": "updateDraftMessage",
+  "params": [
+    {"name": "local", "type": "boolean"},
+    {"name": "threadId", "type": "number"}
+  ]
+}, {
+  "predicate": "updateChannelReload",
+  "params": [
+    {"name": "channel_id", "type": "ChatId"}
+  ],
+  "type": "Update"
+}, {
+  "predicate": "messages.stickerSet",
+  "params": [
+    {"name": "refreshTime", "type": "number"}
+  ]
+}, {
+  "predicate": "replyKeyboardHide",
+  "params": [
+    {"name": "mid", "type": "number"}
+  ]
+}, {
+  "predicate": "replyKeyboardForceReply",
+  "params": [
+    {"name": "mid", "type": "number"},
+    {"name": "hidden", "type": "true"},
+    {"name": "fromId", "type": "PeerId"}
+  ]
+}, {
+  "predicate": "replyKeyboardMarkup",
+  "params": [
+    {"name": "mid", "type": "number"},
+    {"name": "hidden", "type": "true"},
+    {"name": "fromId", "type": "PeerId"}
+  ]
+}, {
+  "predicate": "replyKeyboardForceReply",
+  "params": [
+    {"name": "used", "type": "true"}
+  ]
+}, {
+  "predicate": "inputDocumentFileLocation",
+  "params": [
+    {"name": "checkedReference", "type": "boolean"}
+  ]
+}, {
+  "predicate": "webPage",
+  "params": [
+    {"name": "rTitle", "type": "string"},
+    {"name": "rDescription", "type": "string"}
+  ]
+}, {
+  "predicate": "inputMediaContact",
+  "params": [
+    {"name": "user_id", "type": "UserId"}
+  ]
+}, {
+  "predicate": "poll",
+  "params": [
+    {"name": "rQuestion", "type": "string"},
+    {"name": "rReply", "type": "string"},
+    {"name": "chosenIndexes", "type": "number[]"}
+  ]
+}, {
+  "predicate": "messageMediaCall",
+  "params": [
+    {"name": "action", "type": "MessageAction.messageActionPhoneCall"}
+  ],
+  "type": "MessageMedia"
+}, {
+  "predicate": "availableReaction",
+  "properties": [
+    {"name": "static_icon", "type": "Document.document"},
+    {"name": "appear_animation", "type": "Document.document"},
+    {"name": "select_animation", "type": "Document.document"},
+    {"name": "activate_animation", "type": "Document.document"},
+    {"name": "effect_animation", "type": "Document.document"},
+    {"name": "around_animation", "type": "Document.document"},
+    {"name": "center_icon", "type": "Document.document"}
+  ]
+}, {
+  "predicate": "updateMessageReactions",
+  "params": [
+    {"name": "pts", "type": "number"},
+    {"name": "pts_count", "type": "number"},
+    {"name": "local", "type": "boolean"}
+  ]
+}]

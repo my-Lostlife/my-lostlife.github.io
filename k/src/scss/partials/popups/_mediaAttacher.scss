@@ -1,0 +1,209 @@
+/*
+ * https://github.com/morethanwords/tweb
+ * Copyright (C) 2019-2021 Eduard Kuzmenko
+ * https://github.com/morethanwords/tweb/blob/master/LICENSE
+ */
+
+.popup-new-media {
+  $parent: ".popup";
+
+  #{$parent} {
+    &-container {
+      width: 420px;
+      max-width: 420px;
+      /* padding: 12px 20px 50px; */
+      padding: 12px 20px 32.5px;
+      //max-height: unquote('min(640px, 100%)');
+      max-height: 100%;
+
+      img, 
+      video {
+        border-radius: inherit;
+      }
+    }
+
+    &-header {
+      flex: 0 0 auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 9px;
+      padding: 12px 20px 15px;
+      position: relative;
+  
+      .btn-primary {
+        width: auto;
+        height: 36px;
+        font-size: 14px;
+        font-weight: normal;
+        padding: 0 1.375rem;
+        margin-top: -3px;
+        border-radius: $border-radius-medium;
+        text-transform: uppercase;
+      }
+    }
+  
+    &-close {
+      font-size: 1.5rem;
+      margin: -1px 0 0 -4px;
+    }
+  
+    &-title {
+      flex: 1;
+      padding-left: 1.5rem;
+      margin: 0;
+      margin-top: -3px;
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+  
+    &-photo {
+      max-width: 380px;
+      overflow: hidden;
+      // width: fit-content;
+      width: 100%;
+      border-radius: $border-radius-medium;
+      user-select: none;
+      position: relative;
+    }
+  }
+
+  .scrollable {
+    position: relative;
+  }
+
+  .input-field {
+    width: 100%;
+    margin-top: 25px;
+    flex: 0 0 auto;
+
+    &-input {
+      //height: 54px;
+      font-size: 1rem;
+      border-radius: $border-radius-medium;
+
+      &[data-placeholder]:not(:focus):empty ~ label {
+        opacity: 0;
+      }
+    }
+
+    label {
+      font-size: inherit;
+    }
+  }
+
+  .btn-menu-overlay {
+    z-index: 3;
+  }
+
+  .menu-send {
+    z-index: 4;
+    top: calc(100% + .25rem);
+  }
+}
+
+.popup-new-media.popup-send-photo {
+  .popup-header {
+    padding: 0;
+  }
+
+  .popup-body {
+    position: relative;
+  }
+
+  .checkbox-field {
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .popup-item-album {
+    position: relative;
+
+    .album-item {
+      position: absolute;
+    }
+
+    img, 
+    video {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .popup-photo > .popup-item-media {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .popup-photo > .popup-item {
+    position: relative;
+    border-radius: inherit;
+    overflow: hidden;
+  }
+
+  .popup-photo > .popup-item + .popup-item {
+    margin-top: .5rem;
+  }
+
+  .drop {
+    border-radius: 0;
+  }
+
+  .document {
+    max-width: 100%;
+    overflow: hidden;
+    cursor: default;
+    height: 4.5rem;
+
+    &-name {
+      font-weight: normal;
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.5;
+    }
+
+    &-ico {
+      height: 48px;
+      width: 48px;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 11px;
+      letter-spacing: 0;
+    }
+
+    /* &.photo {
+      .document-ico {
+        border-radius: $border-radius;
+      }
+    } */
+  }
+}
+
+.popup-create-contact {
+  .name-fields {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding-left: 116px;
+    margin-top: 1rem;
+
+    .input-field:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .avatar-placeholder {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

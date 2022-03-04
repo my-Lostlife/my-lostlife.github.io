@@ -1,0 +1,107 @@
+/*
+ * https://github.com/morethanwords/tweb
+ * Copyright (C) 2019-2021 Eduard Kuzmenko
+ * https://github.com/morethanwords/tweb/blob/master/LICENSE
+ */
+
+html:not(.is-safari):not(.is-ios) {
+  .scrollable::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    opacity: 0; // for safari
+    width: .375rem;
+  }
+  
+  .scrollable::-webkit-scrollbar-thumb {
+    width: 0;
+    height: 0;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    opacity: 0;
+    transition: .2s ease-in-out;
+  }
+  
+  ::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-corner {
+    background-color: transparent;
+  }
+  
+  .scrollable:hover::-webkit-scrollbar {
+    opacity: 1; // for safari
+  }
+  
+  .scrollable:hover::-webkit-scrollbar-thumb {
+    min-height: 5rem;
+    max-height: 12.5rem;
+    border-radius: $border-radius-medium;
+    background-color: var(--scrollbar-color);
+    opacity: 1;
+  }
+}
+
+.scrollable-x::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
+  display: none; // for safari iOS
+}
+
+/* .no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.no-scrollbar::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 0;
+} */
+
+.scrollable {
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  max-height: 100%;
+  // transform: translateZ(0);
+
+  //@include respond-to(not-handhelds) {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+  //}
+
+  -webkit-overflow-scrolling: touch;
+
+  &.scrollable-x {
+    overflow-x: auto;
+    scrollbar-width: thin; // Firefox only
+    -ms-overflow-style: none;
+  }
+
+  &.scrollable-y {
+    overflow-y: auto;
+    overflow-y: overlay;
+    scrollbar-width: thin; // Firefox only
+    -ms-overflow-style: none;
+    transform: translateZ(0);
+
+    /* html.is-safari & {
+      overflow-y: scroll;
+    } */
+  }
+
+  &-padding {
+    min-width: 100%;
+    height: 100%;
+  }
+
+  /* html.is-safari &-padding {
+    margin-right: -6px;
+  } */
+}

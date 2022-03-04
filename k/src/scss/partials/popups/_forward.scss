@@ -1,0 +1,75 @@
+/*
+ * https://github.com/morethanwords/tweb
+ * Copyright (C) 2019-2021 Eduard Kuzmenko
+ * https://github.com/morethanwords/tweb/blob/master/LICENSE
+ */
+
+.popup-forward {
+  $parent: ".popup";
+
+  #{$parent} {
+    &-container {
+      width: 420px;
+      max-width: 420px;
+      //padding: 12px 20px 32.5px;
+      padding: 7px 0 0 0;
+      max-height: unquote('min(40.625rem, 100%)');
+      height: 40.625rem;
+    }
+
+    &-header {
+      flex: 0 0 auto;
+      margin-bottom: 3px;
+      padding: 0 1rem;
+
+      @include respond-to(handhelds) {
+        padding-left: .9375rem;
+      }
+    }
+
+    &-title {
+      flex-grow: 1;
+    }
+  }
+
+  .selector, .chatlist-container {
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex: 1 1 auto;
+  }
+
+  .selector {
+    &-search-input {
+      font-size: 1.25rem;
+      padding: .5rem 1.5rem;
+      width: 100%;
+      line-height: var(--line-height);
+
+      @include respond-to(handhelds) {
+        padding-left: 1.0625rem;
+      }
+    }
+
+    .chatlist {
+      margin-top: 0 !important;
+  
+      &-chat {
+        height: 3.875rem !important;
+        padding-top: .5rem !important;
+        padding-bottom: .5rem !important;
+      }
+    }
+  }
+
+  .gradient-delimiter {
+    display: none;
+  }
+
+  .sidebar-left-section {
+    padding-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

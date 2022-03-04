@@ -1,0 +1,35 @@
+/*
+ * https://github.com/morethanwords/tweb
+ * Copyright (C) 2019-2021 Eduard Kuzmenko
+ * https://github.com/morethanwords/tweb/blob/master/LICENSE
+ */
+ 
+.popup-join-chat-invite {
+  user-select: none;
+
+  .popup-container {
+    max-width: 420px;
+  }
+  
+  .popup-body {
+    align-items: center;
+    padding: .5rem 0 1.25rem;
+  }
+
+  .chat-title {
+    font-weight: bold;
+    margin: .75rem 0 .25rem;
+    line-height: var(--line-height);
+  }
+
+  .chat-participants-count {
+    color: var(--secondary-text-color);
+    font-size: .875rem;
+    line-height: var(--line-height);
+  }
+
+  .request-caption {
+    margin-top: 1rem;
+    text-align: center;
+  }
+}
